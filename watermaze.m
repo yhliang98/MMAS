@@ -2,7 +2,7 @@ clear all
 root_dir = 'D:\To\Your\Path\';
 filenames = dir([root_dir, '*00.csv']);
 file_num = size(filenames,1);
-writing_dir = ''D:\To\Your\Path.xlsx\';
+writing_dir = 'D:\To\Your\Path.xlsx\';
 strategy_dir = 'D:\To\Your\Path\pathfinder\strategy\';
 
 file_name={}; trial_name=[]; time_video_all = [ ]; time_totalw=[]; time_select_percent_all = []; load_frame = []; time_inw=[]; time_in_percent=[]; length_bodycenter_all_realw=[];
