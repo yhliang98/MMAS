@@ -15,4 +15,4 @@ You could try it on your own videos and get .csv files, containing the tracking 
 This module allows us to conduct behavior and motion analysis from previous results with one click. The output includes escape latency, trajectory length, speed, head turning angles, tail wagging angles, body lengths and etc. They are all summrized into an Excel file. Details could be found in [watermaze.m](MMAS/watermaze.m). Don't forget to change the path to your previous output.
 
 ## Cognitive score
-[Cognitive score](https://www.nature.com/articles/s41598-022-09270-1) is calculated based on search strategies, which are determined by (Pathfinder](https://f1000research.com/articles/8-1521/v2). For more details of implentation, please [click here](https://github.com/MatthewBCooke/Pathfinder)
+[Cognitive score](https://www.nature.com/articles/s41598-022-09270-1) is calculated based on search strategies, which are determined by [Pathfinder](https://f1000research.com/articles/8-1521/v2). For more details of implentation, please [click here](https://github.com/MatthewBCooke/Pathfinder)
