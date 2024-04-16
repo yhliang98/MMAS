@@ -1,9 +1,9 @@
 clear all
-root_dir = 'D:\HKU\mouse_tracking\attachment\5xfad6m\';
+root_dir = 'D:\To\Your\Path\';
 filenames = dir([root_dir, '*00.csv']);
 file_num = size(filenames,1);
-writing_dir = 'D:\HKU\mouse_tracking\output\5xfad6m\5xfad6m.xlsx';
-strategy_dir = 'D:\HKU\mouse_tracking\pathfinder\strategy\';
+writing_dir = ''D:\To\Your\Path.xlsx\';
+strategy_dir = 'D:\To\Your\Path\pathfinder\strategy\';
 
 file_name={}; trial_name=[]; time_video_all = [ ]; time_totalw=[]; time_select_percent_all = []; load_frame = []; time_inw=[]; time_in_percent=[]; length_bodycenter_all_realw=[];
 length_bodycenter_in_realw=[]; length_bodycenter_out_realw=[]; length_bodycenter_in_percentw=[]; time_still_bodycenter=[]; time_object1=[]; time_object2=[];
@@ -354,8 +354,8 @@ for i = 1:file_num
     rot_body_trajectory_real = rot_body_trajectory/average_boundary*90;%cm
     rot_body_trajectory_realw = [rot_body_trajectory_realw; rot_body_trajectory_real];%cm
     rot_body_velocity = [rot_body_velocity; rot_body_trajectory_real/time_total];%cm/s
-    time_still_body_rotation = [time_still_body_rotation; numel(find(rot_body_trajectory_pieces<1))/16];%s Ö±ÐÐ»ò¾²Ö¹£¨ÉíÌå²»×ª£©
-    time_still_body_velocity_rotation = [time_still_body_velocity_rotation; numel(find(rot_body_trajectory_pieces<1 & length_bodycenter_pieces<1))/16];%s ÕæÕý¾²Ö¹
+    time_still_body_rotation = [time_still_body_rotation; numel(find(rot_body_trajectory_pieces<1))/16];%s ç›´è¡Œæˆ–é™æ­¢ï¼ˆèº«ä½“ä¸è½¬ï¼‰
+    time_still_body_velocity_rotation = [time_still_body_velocity_rotation; numel(find(rot_body_trajectory_pieces<1 & length_bodycenter_pieces<1))/16];%s çœŸæ­£é™æ­¢
     
     rot_body_x_norm_sort = sort(abs(rot_body_x));
     rot_body_y_norm_sort = sort(abs(rot_body_y));
